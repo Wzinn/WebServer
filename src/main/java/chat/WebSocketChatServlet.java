@@ -11,7 +11,7 @@ public class WebSocketChatServlet extends WebSocketServlet {
     private final ChatService chatService;
 
     public WebSocketChatServlet() {
-        this.chatService = new ChatService();
+        this.chatService = new ChatServiceImpl();
     }
 
     @Override

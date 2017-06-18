@@ -13,11 +13,7 @@ import org.hibernate.service.ServiceRegistry;
 public class DBServiceImpl implements DBService {
 
     private static final String hibernate_show_sql = "true";
-<<<<<<< HEAD
-    private static final String hibernate_hbm2ddl_auto = "create";
-=======
     private static final String hibernate_hbm2ddl_auto = "update"; //update, validate, create, create-drop
->>>>>>> refactoring
 
     private final SessionFactory sessionFactory;
 
