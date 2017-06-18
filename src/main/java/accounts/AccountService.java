@@ -3,13 +3,14 @@ package accounts;
 import dataSets.UsersDataSet;
 import dbService.DBException;
 import dbService.DBService;
+import dbService.DBServiceImpl;
 
 public class AccountService {
 
     private DBService dbService;
 
     public AccountService() {
-        dbService = new DBService();
+        dbService = new DBServiceImpl();
     }
 
     public void addNewUser(String login, String password, String name) {
